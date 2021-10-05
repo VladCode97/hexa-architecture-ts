@@ -10,6 +10,11 @@ export class UserArrayRepository implements IUserRepository {
         this.users = Usermockup;
     }
 
+    createAll(user: IUser): string {
+        this.users.push(user);
+        return `${user.name} create success !!!`;
+    }
+
     viewByName(name: string): IUser {
         return this.users.find((user: IUser) => user.name === name);
     }

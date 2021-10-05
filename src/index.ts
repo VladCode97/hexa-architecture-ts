@@ -8,7 +8,7 @@ class Index {
         const viewUserCase = new ViewUserCase(userArrayRepository);
         const createUserUseCase = new CreateUserUseCase(userArrayRepository);
         console.log(createUserUseCase.createAll({
-            name: 'Celmira Cifuentes',
+            name: 'Johern rrcv',
             email: 'cf@gmail.com',
             password: '323sd.ds',
             age: 78
