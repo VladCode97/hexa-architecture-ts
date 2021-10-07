@@ -5,11 +5,11 @@ export class ViewUserCase implements IUserRepository {
 
     constructor(private readonly userRepository: IUserRepository) { }
 
-    viewUserByName(name: string): IUser {
+    viewUserByName(name: string): Promise<IUser> {
         return this.userRepository.viewUserByName(name);
     }
 
-    viewAllUsers(): Array<IUser> {
+    viewAllUsers(): Promise<Array<IUser>> {
         return this.userRepository.viewAll();
     }
 

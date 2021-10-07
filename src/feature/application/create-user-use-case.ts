@@ -5,7 +5,7 @@ export class CreateUserUseCase implements IUserRepository {
 
     constructor(private readonly userRepository: IUserRepository) { }
 
-    createAll(user: IUser): string {
+    createAll(user: IUser): Promise<string> {
         return this.userRepository.createAll(user);
     }
 
